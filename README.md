@@ -9,13 +9,36 @@ You can find more information about Hibersap at http://hibersap.sourceforge.net/
 
 This plugin is licensed under LGPL, like Forge and Hibersap
 
+<h2>How to use - shortcut</h2>
+You will find:
+- the according jboss forge version as ZIP in src/main/resources
+- the sapjco3.jar of version 3.0.10 in src/main/resources
 
-<h2>How to use</h2>
+1. Install sapjco3 jar to your local Maven repository from the command line (to be found of the plugin POM): 
+
+
+	mvn install:install-file -DgroupId=com.sap -DartifactId=sap-jco -Dversion=3.0.10 -Dpackaging=jar -Dfile=src/main/resource/sapjco3.jar
+
+2. clean and build
+3. Unzip forge
+4. Run forge and install plugin
+
+
+	forge source-plugin <path-to-plugin>
+
+5. To use the plugin read the following blogposts: 
+
+Also read the akquinet blogpost and watch the screen-cast that shows the usage of the Hibersap-Forge-Plugin:
+
+* <a href="http://blog.akquinet.de/2012/07/12/use-jboss-forge-to-generate-hibersap-classes-calling-sap-functions/">Use JBoss Forge to generate Hibersap Classes that call SAP Functions</a>
+* <a href="http://vimeo.com/45260307">JBoss Forge Hibersap Plugin Screencast</a> from <a href="http://vimeo.com/user12377452">mxsb</a> on <a href="http://vimeo.com">Vimeo</a>
+
+
+<h2>How to use - official ;-)</h2>
 
 
 This plugin is using Hibersap, which is using the SAP Java Connector (JCo).<br>
 Before using download SAP Java Connector 3 (http://service.sap.com/connectors) and extract the sapjco3.jar and the sapjco3 native library.<br>
-(We assume you use version 3.0.7 or higher)
 
 Install sapjco3 jar to your local Maven repository from the command line: 
 
