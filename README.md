@@ -19,7 +19,7 @@ You will find:
 
 	mvn install:install-file -DgroupId=com.sap -DartifactId=sap-jco -Dversion=3.0.10 -Dpackaging=jar -Dfile=src/main/resource/sapjco3.jar
 
-2. clean and build
+2. clean and build hibersap-plugin
 3. Unzip forge
 4. Run forge and install plugin
 
